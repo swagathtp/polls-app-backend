@@ -1,0 +1,43 @@
+1.migrate command
+if we make any changes in database we can run the migrate and apply the changes to the database
+
+2.makemigration command
+it is used to create migration for that change
+
+        API
+To use the free API that provided by Django we have to invoke python shell.
+by the commad,
+                "python3  manage.py shell"
+
+*Importanace of adding __str__()
+it is used because objects'representation are used throughout Django's automatically generated admin.it is also convinient for us while dealing with the interactive prompt.
+
+*Creating an admin user
+for logging into admin site we have to run the commad,
+        "python3 manage.py createsuperadmin"
+and complete the setup parts.
+
+after registering the Question we can freely expolre the free admin functionality 
+by choosing a question and editing it.
+
+This form is automatically generated from question model.
+
+save option save the changes and return to the change list page 
+save and continue editing option save changes and reload the admin page 
+save and add another option save changes and load a new blank form for this type of object
+Delete option display a delete conformation page 
+
+            OVERVIEWS
+*Poll application has four views
+Question index page displays the latest questions
+Question detail page displays a question text with a form to vote 
+Question results page which displays result of a particular question
+vote action which handles voting for a particular choice in particular question
+
+for changing the look of the page we have to edit this python code. use django's tempelete system to separate the design from python by creating a tempelete file .
+
+when ever you create a form that ulters servers data you should use post method
+for getting the data according to the parameter passed in the url for this Django provides a shortcut called generic view. 
+
+for adding color to the background and text and background images static directory is created (styling).
+for arranging the fields in 
